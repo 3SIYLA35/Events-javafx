@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: demo.quickStart.DAOSalleTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.418 s <<< FAILURE! -- in demo.quickStart.DAOSalleTest
+demo.quickStart.DAOSalleTest.testDelete -- Time elapsed: 0.885 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0.0> but was: <9.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:70)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:65)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:885)
+	at demo.quickStart.DAOSalleTest.testDelete(DAOSalleTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

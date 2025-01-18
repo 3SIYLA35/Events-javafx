@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="989.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.quickStart.PrimaryController">
+   <children>
+      <BorderPane fx:id="mainsection" layoutY="1.0" prefHeight="649.0" prefWidth="989.0">
+         <top>
+            <HBox fx:id="header" prefHeight="58.0" prefWidth="788.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="logo" prefHeight="58.0" prefWidth="228.0" />
+                  <HBox fx:id="navbar" prefHeight="58.0" prefWidth="823.0">
+                     <children>
+                        <HBox fx:id="div_nav" prefHeight="58.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              
+                                    <Button fx:id="dashboard" mnemonicParsing="false" onAction="#handleDashboard" text="dashboard" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="div_nav" prefHeight="58.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleReservation" text="Reservation" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="div_nav" prefHeight="58.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              <Button fx:id="Event" cache="true" depthTest="DISABLE" mnemonicParsing="false" onAction="#handleEvent" text="Evenements" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="div_nav" prefHeight="69.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleSalle" text="Salles" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="div_nav" prefHeight="69.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleTerrain" text="Terrains" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="div_nav" prefHeight="69.0" prefWidth="131.33" styleClass="div_nav">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleUser" text="Utilisateurs" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+         <StackPane fx:id="stackpane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <VBox fx:id="main" prefHeight="348.0" prefWidth="788.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="dashboard_record" prefHeight="137.0" prefWidth="986.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="246.0" styleClass="card_dash">
+                           <children>
+                              <HBox layoutX="9.0" layoutY="19.0" prefHeight="100.0" prefWidth="225.0" styleClass="card">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="62.0">
+                                       <children>
+                                          <Pane layoutX="12.0" layoutY="16.0" prefHeight="48.0" prefWidth="50.0" styleClass="icon_div">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <VBox prefHeight="100.0" prefWidth="119.0">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="20.0" layoutY="14.0" text="Evenements" />
+                                                <Label fx:id="countevents" layoutX="20.0" layoutY="42.0" text="Label" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="246.0" styleClass="card_dash">
+                           <children>
+                              <HBox layoutX="9.0" layoutY="19.0" prefHeight="100.0" prefWidth="225.0" styleClass="card">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="62.0">
+                                       <children>
+                                          <Pane layoutX="12.0" layoutY="16.0" prefHeight="48.0" prefWidth="50.0" styleClass="icon_user">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <VBox prefHeight="100.0" prefWidth="119.0">
+                                       <children>
+                                          <Pane prefHeight="80.0" prefWidth="156.0">
+                                             <children>
+                                                <Label layoutX="20.0" layoutY="14.0" text="Utilisateurs" />
+                                                <Label fx:id="countUsers" layoutX="20.0" layoutY="42.0" text="Label" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="246.0" styleClass="card_dash">
+                           <children>
+                              <HBox layoutX="9.0" layoutY="19.0" prefHeight="100.0" prefWidth="225.0" styleClass="card">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="62.0">
+                                       <children>
+                                          <Pane layoutX="12.0" layoutY="16.0" prefHeight="48.0" prefWidth="50.0" styleClass="icon_salle">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <VBox prefHeight="100.0" prefWidth="119.0">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="20.0" layoutY="14.0" text="Salles" />
+                                                <Label fx:id="countromms" layoutX="20.0" layoutY="42.0" text="Label" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="410.0" layoutY="10.0" prefHeight="200.0" prefWidth="246.0" styleClass="card_dash">
+                           <children>
+                              <HBox layoutX="9.0" layoutY="19.0" prefHeight="100.0" prefWidth="225.0" styleClass="card">
+                                 <children>
+                                    <Pane prefHeight="100.0" prefWidth="62.0">
+                                       <children>
+                                          <Pane layoutX="12.0" layoutY="16.0" prefHeight="48.0" prefWidth="50.0" styleClass="icon_Reser">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <VBox prefHeight="100.0" prefWidth="119.0">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="20.0" layoutY="14.0" text="Reservations" />
+                                                <Label fx:id="countreserva" layoutX="20.0" layoutY="42.0" text="Label" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="div_search" prefHeight="85.0" prefWidth="989.0">
+                     <children>
+                        <Pane prefHeight="85.0" prefWidth="877.0">
+                           <children>
+                              <TextField fx:id="search_even" layoutX="8.0" layoutY="30.0" prefHeight="33.0" prefWidth="795.0" styleClass="search_Select" />
+                           </children></Pane>
+                        
+                        <Pane layoutX="210.0" layoutY="10.0" prefHeight="85.0" prefWidth="174.0">
+                              <children>
+                              <Button fx:id="btn_search" layoutX="21.0" layoutY="30.0" mnemonicParsing="false" onAction="#getevent" prefHeight="33.0" prefWidth="102.0" text="Search">
+                                 <styleClass>
+                                    <String fx:value="button" />
+                                    <String fx:value="btn_filter" />
+                                 </styleClass>
+                              </Button>
+                              </children></Pane>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="div_data_events" prefHeight="355.0" prefWidth="989.0">
+                     <children>
+                        <Pane prefHeight="354.0" prefWidth="949.0">
+                           <children>
+                              <Pane layoutX="9.0" prefHeight="342.0" prefWidth="968.0" styleClass="card">
+                                 <children>
+                                    <TableView fx:id="table_events" layoutY="69.0" prefHeight="273.0" prefWidth="968.0">
+                                      <columns>
+                                        <TableColumn fx:id="event_name" minWidth="193.6" prefWidth="75.0" text="EVENT NAME" />
+                                        <TableColumn fx:id="date" minWidth="193.6" prefWidth="96.0" text="DATE" />
+                                        <TableColumn fx:id="description" minWidth="193.6" prefWidth="54.0" text="description" />
+                                        <TableColumn fx:id="status" minWidth="193.6" prefWidth="75.0" text="STATUS" />
+                                        <TableColumn fx:id="actions" minWidth="193.6" prefWidth="75.0" text="ACTIONS" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="18.0" layoutY="20.0" prefHeight="32.0" prefWidth="113.0" text="Evenments List">
+                                       <font>
+                                          <Font name="Arial Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="add_event" layoutX="805.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" styleClass="add_event" text="Ajoute Evenement" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></VBox>
+               </children>
+            </VBox>
+         </StackPane>
+
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: demo.quickStart.DAOUserTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.350 s <<< FAILURE! -- in demo.quickStart.DAOUserTest
+demo.quickStart.DAOUserTest.test_update -- Time elapsed: 0.831 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: error f la mise a jour dyal objet ==> expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:308)
+	at demo.quickStart.DAOUserTest.test_update(DAOUserTest.java:98)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+demo.quickStart.DAOUserTest.testInsert -- Time elapsed: 0.616 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: error f l'insertion dyal objet ==> expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:308)
+	at demo.quickStart.DAOUserTest.testInsert(DAOUserTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.DatePicker?>
+
+
+<VBox fx:id="form_terrain" alignment="TOP_CENTER" prefHeight="471.0"  styleClass="reserForm" prefWidth="300.0" spacing="20.0" AnchorPane.leftAnchor="150.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.quickStart.Controllers.formsControllers.TerrainformController">
+   
+   <Label styleClass="label" text="Make a Field Reservation" />
+   <Label styleClass="label" text="Terrain Name" />
+   <TextField fx:id="TerrainName" prefWidth="300" styleClass="search_Select" promptText="Enter Terrain Name" />
+   <Label styleClass="label" text="Terrain Type" />
+   <TextField fx:id="TerrainType" prefWidth="300" styleClass="search_Select" promptText="Enter Type Name" />
+
+   <Button fx:id="submitBtn" styleClass="add_event" onAction="#addTerrain" text="Submit Reservation" />
+   
+</VBox>

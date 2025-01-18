@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.quickStart.Controllers.ReservationController">
+
+    <AnchorPane fx:id="mainPane" prefHeight="592.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+        <TableView fx:id="table_reservations" layoutY="172.0" prefHeight="420.0" prefWidth="989.0">
+            <columns>
+                <TableColumn fx:id="id_user" minWidth="193.6" prefWidth="75.0" text="ID Utilisateur" />
+                <TableColumn fx:id="id_salle" minWidth="193.6" prefWidth="96.0" text="ID Salle" />
+                <TableColumn fx:id="id_event" minWidth="193.6" prefWidth="54.0" text="ID evenement" />
+                <TableColumn fx:id="id_terrains" minWidth="193.6" prefWidth="75.0" text="ID Terrain" />
+                <TableColumn fx:id="date_reservation" minWidth="193.6" prefWidth="75.0" text="Date Reservation" />
+                <TableColumn fx:id="actions" minWidth="193.6" prefWidth="75.0" text="Actions" />
+            </columns>
+        </TableView>
+
+        <TextField fx:id="get_reser" layoutX="14.0" layoutY="48.0" prefHeight="33.0" prefWidth="736.0" promptText="Rechercher une reservation..." styleClass="search_Select" />
+        
+        <Button fx:id="btn_search" layoutX="908.0" layoutY="48.0" mnemonicParsing="false" onAction="#getReservation" prefHeight="33.0" prefWidth="60.0" styleClass="btn_filter" text="Filtrer" />
+
+        <Label layoutX="14.0" layoutY="111.0" prefHeight="32.0" prefWidth="272.0" stylesheets="@../style/style.css" text="Liste des Reservations">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="add_reservation" layoutX="813.0" layoutY="112.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="add_event" text="Ajouter Reservation" />
+
+    </AnchorPane>
+</StackPane>
